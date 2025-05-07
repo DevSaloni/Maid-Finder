@@ -1,0 +1,506 @@
+* {
+  font-family: "Oswald", sans-serif;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* **************************************************** */
+/* Navbar section */
+.nav-Container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px; /* slightly bigger for better look */
+  width: 100%;
+  background-color: black;
+  padding: 0 20px; /* add side padding */
+}
+
+
+
+.nav-links {
+  display: flex;
+  gap: 20px; /* space between links */
+  align-items: center;
+  color: white;
+  font-size: 18px;
+}
+
+.logo-heading h1{
+  font-size: 25px;
+  color: aqua;
+}
+/* If links are anchor tags inside nav-links */
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: gray; /* simple hover effect */
+}
+
+
+/* Hero section  */
+.hero-section {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: palevioletred;
+  padding: 20px;
+  gap: 30px; /* space between title and image */
+}
+
+.hero-title {
+  flex: 1;
+}
+
+.heading {
+  color: black;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.para {
+  color:white;
+  font-size: 18px;
+}
+
+.hero-image img {
+  padding-top: 10px;
+  margin: 20px;
+  width: 300px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Making product list */
+/* Making product list */
+.make-product-list {
+  width: 100%;
+  min-height: 400px;
+  padding: 40px 20px;
+  background-color: #fefefe;
+}
+
+.make-product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.make-product-content {
+  text-align: center;
+}
+
+.header {
+  font-size: 32px;
+  color: brown;
+  margin-bottom: 20px;
+}
+
+
+
+.list-dishes {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+  font-size: 18px;
+  color: black;
+}
+
+.images-make-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 20px;
+}
+
+.images-make-section img {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.images-make-section img:hover {
+  transform: scale(1.05);
+}
+
+
+/* delivery book panel section */
+.delivery-book-panel {
+  height: 400px;
+  width: 100%;
+  background-color: burlywood;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  gap: 40px;
+}
+
+.book-panel-left img {
+  height: 100%;
+  width: 550px; /* or any size you want like 600px, 900px */
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+.book-panel-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 50%;
+}
+
+.book-title {
+  color: black;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.book-delivery-section p {
+  color: black;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.book-form button {
+  color: #fefefe;
+  background-color: crimson;
+  font-size: 14px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.book-form button:hover {
+  background-color: darkred;
+}
+
+/* Menu Card  */
+.menu-card {
+  padding: 20px;
+  background-color: #1e1e1e;
+  color: white;
+  border-radius: 8px;
+  width: 250px;
+}
+
+.menu-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #ffcc66;
+}
+
+.menu-item {
+  margin-bottom: 12px;
+  padding: 10px;
+  background-color: #2a2a2a;
+  border-radius: 5px;
+}
+
+.menu-item h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color:#ff5722;
+  border-bottom: 2px solid #ff5722;
+
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  color: #ffffff;
+}
+
+
+/* search section */
+/* Main container layout */
+.searchpage {
+  display: flex;
+  min-height: 100vh;
+  background-color: #121212;
+  color: white;
+  padding: 20px;
+  gap: 20px;
+}
+
+/* Left sidebar */
+.menu-card-sidebar {
+  width: 240px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* Right section */
+.right-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Search bar */
+.search-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 29px;
+  gap: 10px;
+}
+
+.search-section input,
+.search-section select {
+  padding: 9px;
+  width: 400px;
+  border: 1px solid #444;
+  background: #1e1e1e;
+  color: white;
+  border-radius: 6px;
+}
+
+.search-section button {
+  background-color: orangered;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Food cards container */
+.show-food {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+
+
+/* food card  */
+/* Food card container */
+.food-card {
+  background: rgba(0, 0, 0, 0.4); /* semi-transparent black like mirror */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  padding: 12px;
+  margin-top: 20px;
+  margin-left: 35px;
+}
+
+/* Hover effect */
+.food-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.7);
+}
+
+/* Image section */
+.food-list img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Info section */
+.food-info {
+  margin-top: 10px;
+}
+
+.dish-name {
+  font-size: 18px;
+  margin-bottom: 6px;
+  color: #ffcc70;
+}
+
+
+.food-des p{
+  font-size: 14px;
+  margin-bottom: 4px;
+  
+}
+/* Price */
+.price {
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Button */
+.btn {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.btn button {
+  background-color: orangered;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.btn button:hover {
+  background-color: #ff5722;
+}
+
+
+/* booking form  */
+.book-food-container {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+.book-food-container h2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+
+}
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.booking-form input,
+.booking-form textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.city-pincode {
+  display: flex;
+  gap: 10px;
+}
+
+.city-pincode input {
+  flex: 1;
+}
+
+.food-selection label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.payment-method label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+button {
+  padding: 12px;
+  background-color: #28a745;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+
+/* Footer */
+.footer-main {
+  height: 300px;
+  width: 100%;
+  background-color: palevioletred;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.About,
+.Links,
+.contact,
+.social-media-links {
+  color: #fefefe;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.Links a {
+  text-decoration: none;
+  color: #fefefe;
+  transition: color 0.3s;
+}
+
+.Links a:hover {
+  color: #ffffffcc;
+}
+
+.social-media-links svg {
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.social-media-links svg:hover {
+  transform: scale(1.1);
+}
+
+/* ABout section */
+.about-section {
+  padding: 60px 20px;
+  background-color: #fff0f5; /* Light pink */
+  text-align: center;
+  color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.about-section h1 {
+  font-size: 36px;
+  color: #c2185b; /* A deep pink color */
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  font-size: 18px;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
