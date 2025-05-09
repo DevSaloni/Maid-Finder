@@ -1,0 +1,67 @@
+.navbar-container {
+  width: 100%;
+  background-color: skyblue;
+  padding: 10px 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo p {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.first-word {
+  color: brown;
+}
+
+.second-word {
+  color: chartreuse;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.btn-group {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-btn {
+  background-color: orangered;
+  border: none;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.nav-btn:hover {
+  background-color: rgb(255, 87, 34);
+}
+
+.profile-section {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.profile-section p {
+  margin: 4px 0;
+  cursor: pointer;
+}
+
+.profile-section p:hover {
+  text-decoration: underline;
+}
