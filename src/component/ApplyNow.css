@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%); /* Start off-screen on the left */
+  }
+  to {
+    transform: translateX(0); /* Move to normal position */
+  }
+}
+
 .trust-safety-section {
   background: linear-gradient(135deg, #fff0f5 0%, #ffe4ec 100%);
   padding: 60px 30px;
@@ -11,6 +20,7 @@
   font-family: 'Inter', sans-serif;
   position: relative;
   overflow: hidden;
+  animation: slideIn 1s ease-out; /* Apply the animation */
 }
 
 .trust-safety-section::before {
