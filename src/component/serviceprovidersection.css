@@ -51,3 +51,8 @@
     font-size: 18px;
     color: #333;
 }
+
+.service-container {
+  margin-bottom: 0; /* remove bottom spacing */
+  padding-bottom: 0;
+}
