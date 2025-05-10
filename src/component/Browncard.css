@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+.brown-card {
+  background-color: #5d2a00;
+  color: #fff;
+  padding: 40px 30px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+  font-family: 'Inter', sans-serif;
+  max-width: 1400px;
+  margin: 60px auto;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateX(100px); /* Start from right */
+  transition: all 1.0s ease;
+}
+
+.brown-card.slide-in-left {
+  opacity: 1;
+  transform: translateX(0); /* Slide into position */
+}
+
+.brown-card img {
+  max-width: 350px;
+  border-radius: 16px;
+  flex-shrink: 0;
+}
+
+.brown-card-text {
+  flex: 1;
+}
+
+.brown-card h2 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.brown-card p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #fce4ec;
+  margin-bottom: 20px;
+}
+
+.brown-card button {
+  background-color: #f06292;
+  color: white;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(240, 98, 146, 0.3);
+  transition: all 0.3s ease;
+}
+
+.brown-card button:hover {
+  background-color: #ec407a;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(240, 98, 146, 0.4);
+}
