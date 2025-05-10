@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Navbar.css';
 
 const Navbar = () => {
+  const [showDropdown, setShowDropdown] = useState(false);
+
+  const toggleDropdown = () => {
+    setShowDropdown(!showDropdown);
+  };
+
   return (
     <div className="navbar-container">
       <div className="navbar">
@@ -19,10 +25,19 @@ const Navbar = () => {
           </div>
 
           <div className="profile-section">
-            <h4>Profile</h4>
-            <p>View Profile</p>
-            <p>Edit Profile</p>
-            <p>Logout</p>
+            <img
+              src="/images/menu.png"
+              alt="menu"
+              className="menu-icon"
+              onClick={toggleDropdown}
+            />
+            {showDropdown && (
+              <div className="dropdown-menu">
+                <p>View Profile</p>
+                <p>Edit Profile</p>
+                <p>Logout</p>
+              </div>
+            )}
           </div>
         </div>
       </div>
