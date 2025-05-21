@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
 import './Navbar.css';
+import {useNavigate} from 'react-router-dom';
+
 
 const Navbar = () => {
+  const navigate = useNavigate();
+
   const [showDropdown, setShowDropdown] = useState(false);
 
   const toggleDropdown = () => {
@@ -20,8 +24,8 @@ const Navbar = () => {
 
         <div className="right-section">
           <div className="btn-group">
-            <button className="nav-btn">Login</button>
-            <button className="nav-btn">Signup</button>
+            <button className="nav-btn" onClick={() => navigate('/login')}>Login</button>
+            <button className="nav-btn" onClick={() => navigate('/signup')}>Signup</button>
           </div>
 
           <div className="profile-section">
