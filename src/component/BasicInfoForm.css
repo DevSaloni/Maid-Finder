@@ -1,0 +1,74 @@
+/* General container */
+.maid-form-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #fff8f0;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Form heading */
+.form-step h2 {
+  color: #ff5e5e;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Input and select fields */
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px 15px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #ff8888;
+  outline: none;
+  box-shadow: 0 0 8px rgba(255, 94, 94, 0.3);
+}
+
+/* Buttons */
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.form-buttons button {
+  background-color: #ff5e5e;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-buttons button:hover {
+  background-color: #ff4242;
+}
+
+/* File input customization (optional) */
+input[type="file"] {
+  padding: 7px;
+  background-color: #fff;
+  border: 1px dashed #ccc;
+  cursor: pointer;
+}
+
+/* Textarea styling */
+textarea {
+  height: 100px;
+  resize: vertical;
+}
